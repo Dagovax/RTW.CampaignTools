@@ -1,8 +1,9 @@
 # Rome: Total War - Campaign Tools
 A .NET 8 Windows application that validates campaign files and shows region information
 
+
 ## Installation
-[Download](https://github.com/Dagovax/RTW.CampaignTools/releases) one of the released <i>RTW.CampaignTools</i> executables.<br/>
+[Download](https://github.com/Dagovax/Rome-Total-War-Tools-and-Features/tree/master/RTW.CampaignTools) one of the <i>RTW.CampaignTools</i> executables.<br/>
 
 Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find that [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 - If you downloaded <b>RTW.CampaignTools (32-bit).exe</b>, download the <b><u>x86</u></b> version
@@ -11,6 +12,15 @@ Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find t
 I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not running on a 64 bit processor.
 
 ## Change Log
+***Version 1.0.22***
+- Added parse support for `descr_formations.txt` and `descr_formations_ai.txt`
+- Added two new application themes: *Green* and *Solarized*.
+- Reworked main application screen to work with DPI scaling (UI sizes of 125% etc).
+- Main menu now is smoother and has better visuals.
+- I created a custom progress bar control that I fully wrote from scratch, allowing it to be using Theme specific coloring etc (and rounded borders).
+- Fixed an issue where new `Data Files` tab in `Warnings` overlay were not using Theme colors.
+- Fixed theme glitch on application startup.
+
 ***Version 1.0.21***
 - Added parse support for `descr_model_battle`, `descr_engines.txt`, `descr_mount.txt`, `descr_projectile_new.txt`
 - Added additional warning tab for 'Data Files', which shows all files parsed during validation but not that required for campaign.
