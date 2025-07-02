@@ -3,7 +3,7 @@ A .NET 8 Windows application that validates campaign files and shows region info
 
 
 ## Installation
-[Download](https://github.com/Dagovax/Rome-Total-War-Tools-and-Features/tree/master/RTW.CampaignTools) one of the <i>RTW.CampaignTools</i> executables.<br/>
+[Download](https://github.com/Dagovax/RTW.CampaignTools/releases) one of the released <i>RTW.CampaignTools</i> executables.<br/>
 
 Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find that [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 - If you downloaded <b>RTW.CampaignTools (32-bit).exe</b>, download the <b><u>x86</u></b> version
@@ -12,6 +12,15 @@ Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find t
 I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not running on a 64 bit processor.
 
 ## Change Log
+***Version 1.0.23***
+- Added parse support for `descr_cultures.txt` and `export_descr_unit.txt`
+- Fixed an issue when loading packs that are empty on purpose.
+- Added a whole new initial overlay: **Overlays -> Strat**. Allows to view region borders, and settlement information.
+- To support above section, additional menu setting was added: **Display -> Overlay -> Strat**.
+- Fixed some minor runtime exceptions.
+- Unit cards and Unit info cards are now searched for in the following order: *Mod -> Packs -> Data*. In this build EDU will give warnings for every missing unit card / unit info.
+- Warnings tab now shows dynamic info. Easier for me to maintain.
+
 ***Version 1.0.22***
 - Added parse support for `descr_formations.txt` and `descr_formations_ai.txt`
 - Added two new application themes: *Green* and *Solarized*.
