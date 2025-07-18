@@ -12,6 +12,15 @@ Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find t
 I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not running on a 64 bit processor.
 
 ## Change Log
+***Version 1.0.24***
+- Added complete portrait allocation for OG, portraits allocated uses the same randomization as the base game. Should work for all mods
+- Portrait allocation is impossible to crack for RR, because that allocation seems to work differently (unfortunately).
+- Fixes some crashes when base game files could not be found
+- All character types are now displayed on the **Overlays -> Strat** section. You can toggle them on or off based on your preference.
+- Added .dds import support. This means the tool can read .dds files on all supported formats (including LZ4 compressed RR textures).
+- Fixed a bug reading 'unit' line from `descr_strat.txt`. **ambush** is now a supported word.
+- Fixed a bug (latest) where both mod and base game portrait files were used as allocation, instead of using the mod's portraits only.
+
 ***Version 1.0.23***
 - Added parse support for `descr_cultures.txt` and `export_descr_unit.txt`
 - Fixed an issue when loading packs that are empty on purpose.
