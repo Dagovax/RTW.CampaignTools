@@ -12,6 +12,18 @@ Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find t
 I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not running on a 64 bit processor.
 
 ## Change Log
+***Version 1.0.25***
+- Added parse support for `export_descr_ancillaries` and `export_descr_character_traits.txt`
+- Added parse support for Triggers (for both EDA end EDCT)
+- Fixed issue on Garbage cleaner when loading new form (memory issue)
+- Added exception with message when validator hangs
+- Added own custom title bar component
+- Added 'fade' system when maximizing and minimizing, to have a smoother refresh when forms are redrawn (especially family tree)
+- Reworked some files to work with new improved parser, preventing issues
+- Disabled DPI scaling alltogether. Solves a lot of UI issues.
+- Fixed an issue where *sub_faction* characters would show a wrong character portrait.
+- Fixed an issue where OG mod would not throw error if character name was not present in `descr_names.txt` character list, but was present in that faction's women list.
+
 ***Version 1.0.24***
 - Added complete portrait allocation for OG, portraits allocated uses the same randomization as the base game. Should work for all mods
 - Portrait allocation is impossible to crack for RR, because that allocation seems to work differently (unfortunately).
