@@ -12,6 +12,17 @@ Make sure you have <B>.NET Desktop Runtime 8.0.xx </B> installed: You can find t
 I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not running on a 64 bit processor.
 
 ## Change Log
+***Version 1.0.26***
+- Added parse support for `export_descr_buildings.txt` and its required text files as well as `descr_ui_buildings.txt`
+- Added optional (ignorable via settings) warning for orphan mercenary units in `export_descr_unit.txt`
+- Finetuned resource icons, they now no longer scale with the zoombar size if above 100%. Also added dot (which can be turned off in **Display -> Resources -> Render Dots**)
+- Fixed some trait/ancillary effects issues
+- Added new mercenary highlight section: **Mercenaries -> Unit Highlight**. You can enter or select a mercenary unit and view all regions/pools owning that unit. 
+- Fixed an issue where switching between internal/localised option removed rebel faction display name.
+- `descr_rebel_factions.txt` now reports units that are not owned by the slave faction as error.
+- `export_descr_unit.txt` now warns if a unit has no **sea_faring** attribute (and is no ship or non-combatant).
+- Unrecognized rebel factions in `descr_regions.txt` are now flagged as errors too.
+
 ***Version 1.0.25***
 - Added parse support for `export_descr_ancillaries` and `export_descr_character_traits.txt`
 - Added parse support for Triggers (for both EDA end EDCT)
