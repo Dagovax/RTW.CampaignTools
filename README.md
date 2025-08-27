@@ -1,5 +1,4 @@
-![Icon](/images/icon_campaign_tools.png)
-# Rome: Total War - Campaign Tools
+# ![Icon](/images/icon_campaign_tools.png) Rome: Total War - Campaign Tools
 A .NET 8 Windows application that validates campaign files and shows region information
 
 # Table Of Contents
