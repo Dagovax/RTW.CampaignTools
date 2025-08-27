@@ -23,6 +23,11 @@ I recommend you to use the 64 bit variant. Only use 32 bit if your pc is not run
 - `export_descr_unit.txt` now warns if a unit has no **sea_faring** attribute (and is no ship or non-combatant).
 - Unrecognized rebel factions in `descr_regions.txt` are now flagged as errors too.
 
+	***Patch 1.0.26.1***
+	- Changed popup warning type back to Default. People keep getting errors they 'do not see', because of the popup warning was set to 'At Validation End'.
+	- Disabled false positive warnings in EDB related to capabilities and recruit lines. This will have to be implemented per region level.
+	- Fixed an issue in `descr_cultures.txt`, where it would 'skip' an additional line and thus break whole parser.
+
 ***Version 1.0.25***
 - Added parse support for `export_descr_ancillaries` and `export_descr_character_traits.txt`
 - Added parse support for Triggers (for both EDA end EDCT)
